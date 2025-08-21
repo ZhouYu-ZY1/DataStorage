@@ -1,12 +1,16 @@
 ## 简介
-
-这是一个基于 MMKV 和 GSON 依赖库封装的 Android 存储工具，用于高效的本地数据存储和 JSON 数据处理。
+这是一个基于 MMKV 和 GSON 的高效 Android 本地存储工具，支持任意数据类型的持久化存储与 JSON 序列化处理。
 
 ### MMKV
-MMKV 是腾讯开源的高性能移动端通用存储方案，基于 mmap 内存映射技术，具有高性能、高可靠性等特点。
+腾讯开源的高性能键值存储框架：
+- 基于 mmap 内存映射技术，提供卓越的读写性能
+- 支持多进程安全访问
+- 相比 SharedPreferences 性能提升显著
 
 ### GSON
-GSON 是 Google 提供的用于在 Java 对象和 JSON 数据之间进行映射的库。
+Google 官方 JSON 处理库：
+- 提供完整的 Java 对象与 JSON 数据双向转换能力
+- 支持复杂数据结构的序列化与反序列化
 
 ### 依赖配置
 
@@ -14,10 +18,10 @@ GSON 是 Google 提供的用于在 Java 对象和 JSON 数据之间进行映射�
 
 ```gradle
 dependencies {
-    // MMKV - 高性能键值存储
+    // MMKV
     implementation 'com.tencent:mmkv:1.2.16'
     
-    // GSON - JSON 序列化/反序列化
+    // GSON
     implementation 'com.google.code.gson:gson:2.10.1'
 }
 ```
